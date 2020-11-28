@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     "rest_framework",  # RESTful API
     "rest_framework.authtoken",  # DRF自带的token认证
     "course.apps.CourseConfig",
+    "stations.apps.StationConfig",
 ]
 
 MIDDLEWARE = [
