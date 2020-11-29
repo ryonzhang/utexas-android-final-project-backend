@@ -24,5 +24,7 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     path("docs/", include_docs_urls(title="DRF API文档", description="Django REST framework快速入门")),
     path("course/", include("course.urls")),
-    path("station/", include("stations.urls")),
+    path("api/", include("stations.urls")),
+    path("api/", include("shops.urls")),
+    path("api/", include("products.urls")),
 ]

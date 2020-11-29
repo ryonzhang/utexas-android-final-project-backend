@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     "rest_framework.authtoken",  # DRF自带的token认证
     "course.apps.CourseConfig",
     "stations.apps.StationConfig",
+    "shops.apps.ShopsConfig",
+    "products.apps.ProductsConfig",
 ]
 
 MIDDLEWARE = [
@@ -102,7 +104,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/3.0/topics/i18n/
 
-LANGUAGE_CODE = "zh-hans"
+LANGUAGE_CODE = "en"
 
 TIME_ZONE = "Asia/Shanghai"
 

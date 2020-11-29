@@ -5,13 +5,13 @@
 from django.urls import path, include
 from rest_framework.routers import DefaultRouter
 
-from stations import views
+from shops import views
 
 router = DefaultRouter()
-router.register(prefix="stations", viewset=views.StationViewSet)
+router.register(prefix="shop", viewset=views.ShopViewSet)
 
 
 urlpatterns = [
     path("", include(router.urls)),
-    path("stations/<int:pk>/shops", views.station_shop_list, name="station-shops"),
+    path("shops/<int:pk>/products", views.shop_products_list, name="shop-products"),
 ]
