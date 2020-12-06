@@ -11,3 +11,6 @@
 
 ### How to run the docker
 ```docker build -t your-tag .```
+
+### Docker Hub
+```https://hub.docker.com/repository/docker/ryonzhang36/android-final-project-backend```
