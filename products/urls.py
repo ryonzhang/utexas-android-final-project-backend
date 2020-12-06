@@ -8,7 +8,7 @@ from rest_framework.routers import DefaultRouter
 from products import views
 
 router = DefaultRouter()
-router.register(prefix="product", viewset=views.ProductViewSet)
+router.register(prefix="products", viewset=views.ProductViewSet)
 
 
 urlpatterns = [

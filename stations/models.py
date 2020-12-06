@@ -20,8 +20,8 @@ class Station(models.Model):
     image_url = models.TextField(help_text="Image URL", verbose_name="Image URL")
     line = models.IntegerField(help_text="Line", verbose_name="Line")
     sequence = models.IntegerField(help_text="Sequence", verbose_name="Sequence")
-    longitude = models.DecimalField(max_digits=6, decimal_places=2, help_text="Longitude", verbose_name="Longitude")
-    latitude = models.DecimalField(max_digits=6, decimal_places=2, help_text="Latitude", verbose_name="Latitude")
+    longitude = models.DecimalField(max_digits=12, decimal_places=6, help_text="Longitude", verbose_name="Longitude")
+    latitude = models.DecimalField(max_digits=12, decimal_places=6, help_text="Latitude", verbose_name="Latitude")
     created_at = models.DateTimeField(auto_now_add=True, verbose_name="Created At")
     updated_at = models.DateTimeField(auto_now=True, verbose_name="Updated At")
 
